@@ -167,7 +167,7 @@ h3 {
 .pricing {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     background: transparent;
     border-bottom: 3px solid wheat;
     height: 300px;
@@ -240,4 +240,10 @@ footer {
     .row div {
         width: 100%;
     }
+
+    .pricing-container div {
+        width: 100%;
+    }
+
+
 }
