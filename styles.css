@@ -1,0 +1,243 @@
+* {
+    /* border:1px solid black; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: absolute;
+    display: flex-box;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255 255 230);
+    margin: 0 auto;
+}
+
+#sections {
+    padding: 6rem;
+}
+
+/* Header section start*/
+header {
+    position: fixed;
+    width: 100%;
+    background-color: wheat;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    place-items: center;
+    width: 60%;
+    gap: 10px;
+}
+
+#header-img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+li {
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-items: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+    padding: 4px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: "Mountains of Christmas", serif;
+    white-space: nowrap;
+}
+
+/* Header section Over*/
+
+h2 {
+    font-family: "Mountains of Christmas", serif;
+    font-size: 2.5rem;
+    color: brown;
+}
+
+hr {
+    position: static;
+    width: 70%;
+    margin: 30px auto;
+    border: 3px solid wheat;
+    /* padding: 30px; */
+}
+
+/* Form section start*/
+#form-s {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#email {
+    padding: 0.5rem;
+    margin: 1rem 0.8rem;
+    border: 1px solid brown;
+}
+
+#submit {
+    padding: 0.8rem;
+    border: 3px solid wheat;
+    border-radius: 15%;
+    margin: 0 0.8rem;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    color: brown;
+}
+
+#submit:hover {
+    background-color: brown;
+    color: wheat;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row div {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+    place-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.arts {
+    height: 300px;
+    white-space: wrap;
+}
+
+.generate {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+h3 {
+    font-family: serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background: transparent;
+    border-bottom: 3px solid wheat;
+    height: 300px;
+    padding: 2rem;
+}
+
+.price-header {
+    width: 100%;
+    background: linear-gradient(45deg, brown, wheat);
+    text-align: center;
+}
+
+.green {
+    color: darkgreen;
+}
+
+.red {
+    color: orangered;
+}
+
+.price-body {
+    position: static;
+    display: inline;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    background-color: wheat;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: "Mountains of Christmas", serif;
+    font-size: 1rem;
+    color: brown;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: wheat;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 811px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .row,
+    .pricing-container {
+        display: inline;
+    }
+
+    .row div {
+        width: 100%;
+    }
+}
